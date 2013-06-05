@@ -1,0 +1,95 @@
+body {
+  background-color: #000000;
+  color: #eeeeee;
+  font-family: 'Metrophobic', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#title {
+  display: inline-block;
+  position: absolute;
+  margin: 0px auto;
+  width: 100%;
+  top: 0px;
+  font-size: 3em;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.floating {
+  display: inline-block;
+  position: absolute;
+  font-size: 0.6em;
+  text-align: center;
+  width: 25px;
+  height: 12px;
+  background-color: #005599;
+  left: 30px;
+  margin-top: 2px;
+  z-index: 30;
+}
+
+.line {
+  position: absolute;
+  height: 1px;
+  color: #888888;
+  background-color: #555555;
+  width: 100%;
+  border: 0px solid;
+  z-index: -1;
+}
+
+#data1 {
+  display: inline-block;
+  position: absolute;
+  background-color: #222222;
+  color: #aaaaaa;
+  width: 125px;
+  text-align: left;
+  right: 20px;
+  top: 20px;
+  padding: 5px;
+}
+
+#data2 {
+  display: inline-block;
+  position: absolute;
+  background-color: #222222;
+  color: #aaaaaa;
+  width: 125px;
+  text-align: left;
+  right: 20px;
+  top: 110px;
+  padding: 5px;
+}
+
+
+#controller_one {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;  
+  border-radius: 15px;
+  border: 3px solid #000000;
+  background-color: #00aaff;
+  z-index: 50;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+#controller_two {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;  
+  border-radius: 15px;
+  border: 3px solid #000000;
+  background-color: #ffaa00;
+  z-index: 50;
+  margin-left: -5px;
+  margin-top: -5px;
+}
