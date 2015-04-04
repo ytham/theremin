@@ -42,11 +42,11 @@ var audio = [];
 var oscillator = [];
 var gainNode = [];
 for(var i = 0; i < 4; i++) {
-  audio[i] = new webkitAudioContext();
+  audio[i] = new AudioContext();
 
   // Audio Variables
   oscillator[i] = audio[i].createOscillator();
-  gainNode[i] = audio[i].createGainNode();
+  gainNode[i] = audio[i].createGain();
   oscillator[i].frequency.value = 0;
   // 0 - Sine wave
   // 1 - Square wave
@@ -56,7 +56,7 @@ for(var i = 0; i < 4; i++) {
   oscillator[i].connect(gainNode[i]);
   gainNode[i].connect(audio[i].destination);
   gainNode[i].gain.value = 0;
-  oscillator[i].noteOn(0);
+  oscillator[i].start(0);
 }
 
 // Leap motion loop
